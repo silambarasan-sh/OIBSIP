@@ -22,11 +22,17 @@ OIBSIP/
 │   ├── .gitignore                  # Git ignore rules
 │   └── README.md                   # Detailed Task 2 documentation
 │
-└── Python-Task3-PasswordGenerator/
-    ├── main.py                     # Cryptographic random password generator
-    ├── test_password_generator.py  # Automated unit tests
+├── Python-Task3-PasswordGenerator/
+│   ├── main.py                     # Cryptographic random password generator
+│   ├── test_password_generator.py  # Automated unit tests
+│   ├── .gitignore                  # Git ignore rules
+│   └── README.md                   # Detailed Task 3 documentation
+│
+└── Python-Task4-WeatherApp/
+    ├── main.py                     # Dual-mode Weather application (CLI & Tkinter GUI)
+    ├── test_weather_app.py         # Automated unit tests (17 tests)
     ├── .gitignore                  # Git ignore rules
-    └── README.md                   # Detailed Task 3 documentation
+    └── README.md                   # Detailed Task 4 documentation
 ```
 
 ---
@@ -46,6 +52,13 @@ A cryptographically secure, customizable random password generator using Python'
 - **Customization:** Toggle uppercase, lowercase, numbers, and special symbols; customizable length (8–128).
 - **Features:** Automated entropy and password strength scoring.
 - **Testing:** Comprehensive unit test suite with `unittest`.
+
+### 🌤️ [Task 4: Basic Weather App](file:///d:/Silambu/OIBSIP/Python-Task4-WeatherApp/README.md)
+A live meteorological monitoring application integrated with the OpenWeatherMap API, featuring automatic metric/imperial conversion, error recovery, offline demonstration fallback, and a modern Tkinter GUI.
+- **API Source:** OpenWeatherMap REST API + built-in offline simulation dataset.
+- **Metrics:** Current temperature (°C/°F), humidity (%), weather conditions, wind speed (km/h & mph), pressure, visibility.
+- **Interface:** Interactive terminal CLI & Tkinter desktop graphical application.
+- **Testing:** 17 automated unit tests with `unittest`.
 
 ---
 
@@ -74,6 +87,23 @@ python main.py
 
 # Run unit tests
 python -m unittest test_password_generator.py -v
+```
+
+### Task 4: Weather App
+```bash
+cd Python-Task4-WeatherApp
+
+# Interactive CLI mode
+python main.py
+
+# Modern Tkinter GUI mode
+python main.py --gui
+
+# Run in offline demo mode
+python main.py -c "Chennai" --demo
+
+# Run unit tests
+python -m unittest test_weather_app.py -v
 ```
 
 ---
